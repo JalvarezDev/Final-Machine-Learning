@@ -63,21 +63,19 @@ a dog playing in the park
 Haz clic en "Buscar".
 La aplicación devolverá las imágenes más relevantes junto con la similitud calculada.
 # Tecnologías Utilizadas
-## Framework de ML: PyTorch.
-## Modelo: CLIP (openai/clip-vit-base-patch32).
-## Frontend: Gradio para la interfaz de usuario.
-## Gestión de Dependencias: pip.
+### Framework de ML: PyTorch.
+### Modelo: CLIP (openai/clip-vit-base-patch32).
+### Frontend: Gradio para la interfaz de usuario.
+### Gestión de Dependencias: pip.
 
-Problemas Comunes
+#Problemas Comunes
 1. El número de imágenes no coincide con los embeddings
 Solución: Asegúrate de que el directorio Data/Images contenga exactamente las imágenes para las que se generaron los embeddings.
 
 2. Error InvalidPathError en Gradio
 Solución: Asegúrate de agregar la ruta de las imágenes en el parámetro allowed_paths del método launch() en app.py:
-
-python
-Copiar código
 gradio_interface().launch(allowed_paths=[images_dir])
+
 3. Rendimiento lento
 Solución: Precalcula los embeddings y utiliza un subconjunto más pequeño del dataset para pruebas.
 
