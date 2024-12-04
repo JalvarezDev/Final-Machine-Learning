@@ -79,3 +79,5 @@ gradio_interface().launch(allowed_paths=[images_dir])
 3. Rendimiento lento
 Solución: Precalcula los embeddings y utiliza un subconjunto más pequeño del dataset para pruebas.
 
+Jaime Alvarez de Neyra y Antonio Salinas Moreno
+
