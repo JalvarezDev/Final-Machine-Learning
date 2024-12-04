@@ -68,7 +68,7 @@ La aplicación devolverá las imágenes más relevantes junto con la similitud c
 ### Frontend: Gradio para la interfaz de usuario.
 ### Gestión de Dependencias: pip.
 
-#Problemas Comunes
+# Problemas Comunes
 1. El número de imágenes no coincide con los embeddings
 Solución: Asegúrate de que el directorio Data/Images contenga exactamente las imágenes para las que se generaron los embeddings.
 
